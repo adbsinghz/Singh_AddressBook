@@ -16,7 +16,7 @@ public class AddressBookApplication {
 
         //creates instance of AddressBook
         AddressBook ab = new AddressBook();
-       // initAddressBookExercise(ab);
+        initAddressBookExercise(ab);
 
 
         //Allows the user to select an option from Menu
@@ -61,15 +61,6 @@ public class AddressBookApplication {
 
 
        // initAddressBookExercise(ab);
-       // AddressBookApplication jk = new AddressBookApplication();
-
-        //jk.init("/Users/arshdeepsingh/Downloads/PDF slides/testinto.txt");
-//        ab.readFromFile("/Users/arshdeepsingh/Desktop/testfile.txt");
-//        ab.list();
-////          Menu aj = new Menu();
-////          ab.add(aj.NewEntry());
-//          ab.find(keyboard.nextLine());
-////        ab.list();
 
 
 
@@ -89,26 +80,5 @@ public class AddressBookApplication {
 
 
     }
-//    public static void init(String filename){
-//        String [] A;
-//        int i = 0;
-//        A = new String[8];
-//        try {
-//            File myObj = new File(filename);
-//            Scanner myReader = new Scanner(myObj);
-//            while (myReader.hasNextLine()) {
-//                //String data = myReader.nextLine();
-//                //System.out.println(data);
-//
-//                A[i] = myReader.nextLine();
-//
-//                System.out.println(A[i]);
-//                i++;
-//            }
-//            myReader.close();
-//        } catch (FileNotFoundException e) {
-//            System.out.println("An error occurred.");
-//            e.printStackTrace();
-//        }
-//    }
+
 }
