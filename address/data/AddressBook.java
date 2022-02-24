@@ -22,6 +22,10 @@ public class AddressBook {
      }
   //  TreeMap<String, AddressEntry> addressEntryList = new TreeMap<>();
 
+    /***
+     * Displays the list using to.string
+     */
+
     public void list() {
         int count = 1;
 
@@ -51,7 +55,10 @@ public class AddressBook {
 //    }
 
 
-
+    /***
+     *
+     * @param addressEntry adds to Treemap which has treeset as value and key has a last name
+     */
 
 
     public void add(AddressEntry addressEntry) {
@@ -60,6 +67,11 @@ public class AddressBook {
         addressEntryList.put(addressEntry.getPrompt_LastName(),value);
 
     }
+
+    /***
+     *
+     * @param ln / Finds the name and list them
+     */
 
     public void find(String ln){
 //       if (addressEntryList.containsKey(ln)){
@@ -80,6 +92,11 @@ public class AddressBook {
         }
 
     }
+
+    /***
+     *
+     * @param ln Removes it from the list by using starting word or full last name
+     */
     public void remove(String ln){
         // first obtain a sect which
 
@@ -104,7 +121,7 @@ public class AddressBook {
                     System.out.printf("%-3s" + entry + "\n\n", i + ":");
                     i++;
                 }
-                
+
 
 
             }
@@ -115,8 +132,10 @@ public class AddressBook {
     }
 
 
-
-
+    /***
+     *
+     * @param filename Reads from the file and makes instance of AddressEntry.
+     */
 
     public void readFromFile(String filename){
         try{
