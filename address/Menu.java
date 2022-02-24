@@ -54,6 +54,7 @@ public class Menu {
         return keyboard.nextLine();
     }
 
+
     public static Integer prompt_Zip() {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Zip: ");
