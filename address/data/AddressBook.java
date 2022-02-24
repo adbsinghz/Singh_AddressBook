@@ -64,7 +64,6 @@ public class AddressBook {
     public void find(String ln){
 
         TreeSet<AddressEntry> s = this.getPre(ln);
-        Scanner keyboard = new Scanner(System.in);
 
         try{
             if(s.size()== 1){
@@ -118,10 +117,6 @@ public class AddressBook {
                 int a = keyboard.nextInt();
                 String z = list.get(a-1).getPrompt_LastName();
                 remove(z);
-
-
-
-
 
             }
         } catch (Exception e) {
